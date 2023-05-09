@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script>
+      let user = {
+        id: 0,
+        name: 'John Doe',
+        age: 32,
+        gender: 'M',
+        city: 'New York',
+        country: 'USA',
+        email: 'johndoe@test.com',
+        phone: '1234567890'
+      };
+
+      function greet(name) {
+        alert('Hello ' + name + '!');
+        console.log('Hello ' + name + '!');
+      }
+
+      function replaceUser() {
+        user = {
+          id: getElementById('user.id'),
+          name: getElementById('user.name'),
+          gender: getElementById,
+          age: 28,
+          city: 'Los Angeles',
+          country: 'USA',
+          email: 'janedoe@test.com',
+          phone: '0987654321'
+        };
+      }
+    </script>
+  </head>
+  <body>  
+    <py-script>
+      print('Hello World!')
+    </py-script>
+    <section style="display: flex;">
+      <form>
+        <input type="text" id="user.name" name="nome">
+        <input type="date" id="user.idade"name="idade">
+        <section>
+          <input type="radio" id="user.gender" name="gender">
+          <input type="radio" id="user.gender" name="gender">  
+        </section>
+        <input type="text" id="user.city" name="city">
+        <input type="text" id="user.country" name="country">
+        <input type="email" id="user.email" name="email">
+        <input type="tel" id="user.phone" name="phone">
+      </form>
+    </section>
+  </body>
+</html>
